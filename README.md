@@ -10,7 +10,7 @@
 * Listen on port 3000.
 
 
-## Setup your endpoints
+## Setup your endpoints 
 Create the following endpoints in `server.js` using express.
 
 * Every endpoint will be using the users collection, found in `users.json`.
