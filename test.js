@@ -89,6 +89,7 @@ test('Change a users language', async t => {
   t.truthy(req.body.id);
   id = req.body.id;
 
+
   req = await request(app)
     .post('/api/users/language/' + id)
     .send({language: 'french'})
@@ -113,6 +114,7 @@ test('Change a users language', async t => {
 
   t.is(req.status, 200);
   t.truthy(req.body.language);
+  console.log(req.body);
   t.is(req.body.language, 'klingon');
 })
 
